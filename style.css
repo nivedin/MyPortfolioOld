@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    outline: 0;
+    
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    cursor: none;
+}
+
+#canvas1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#323335, #262527);
+}
+
+/* ///////////////////////////////////// */
+.mouseCursor {
+    z-index: 1;
+    width: 28px;
+    height: 28px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+}
+
+.mouseCursor::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    border: 9px solid #e4742a;
+    border-radius: 50%;
+    opacity: .5;
+    top: -5px;
+    left: -5px;
+    animation: cursoeAnim2 .5s infinite alternate;
+}
+
+/* //////////////////////// */
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+
+/* /////////////////////// */
+.container {
+     z-index: 1;
+    position: relative;
+    
+}
+
+.navbar {
+    background-color: rgba(187, 187, 243, 0.164);
+    color: wheat;
+    align-items: center;
+   
+}
+
+.contactMe {
+    margin-left: 50px;
+}
+
+.navIcons {
+   
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+
+
+
+.nav a
+ {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: none;
+}
+
+.navIcons a {
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.navIcons a:hover {
+    
+    text-decoration: none;
+    border-bottom: 2px solid wheat;
+}
+
+.contactMe a {
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.contactMe img {
+    margin-right: 10px;
+}
+
+.myname h1 {
+    color: cornsilk;
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 7.5rem;
+    letter-spacing: 2.3rem;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.type p {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+.nonType {
+    color: #000000;
+}
+
+.typed-text {
+    font-weight: 500;
+    color: #e4742a;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: white;
+    margin-left: 0.2rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    49% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+}
+.content{
+    padding: 50px 0px;
+    
+    background-color: rgba(17, 16, 16, 0.226);
+}
+
+.portfolio,
+.aboutMe
+ {
+    padding-top: 150px;
+    color: wheat;
+    width: 100%;
+    height: auto;
+
+}
+.aboutMe>.underline{
+    display: block;
+    width: 200px;
+    height: 5px;
+    background-color: #e4742a;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    opacity: 0.8;
+    margin-left: 40px;
+}
+.aboutMe img{
+    height: 300px;
+    border: 1px blur ;
+    border-radius: 30%;
+}
+.skills{
+
+}
+
+.skills li{
+     list-style: none;
+}
+.bar{
+    background:#e4742a;
+    display: block;
+    height: 15px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+    height: 15px;
+    float: left;
+    background: #151616;
+}
+.sk1{
+    width: 90%;
+}
+.sk2{
+    width: 76%;
+}
+.sk3{
+    width: 65%;
+}
+.sk4{
+    width: 60%;
+}
+.sk5{
+    width: 60%;
+}
+.sk6{
+    width: 80%;
+}
+.sk7{
+    width: 87%;
+}
+.portfolio>.underline{
+    display: block;
+    width: 200px;
+    height: 5px;
+    background-color: #e4742a;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    opacity: 0.8;
+    margin-left: 40px;
+    
+}
+
+
+.portfolio img {
+    padding: 10px;
+    margin-left: 40px;
+    height: 200px;
+}
+
+@media screen and (max-width:660px) {
+    .myname h1 {
+        font-size: 2.7rem;
+    }
+
+    .type p {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+/* ///////scroll//////// */
+
+:root {
+    --shadow: rgb(196, 86, 59);
+    --scrollbarBG: rgb(5, 5, 5);
+    --thumbBG: rgb(12, 11, 12);
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px black;
+}
