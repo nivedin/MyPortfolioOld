@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,79 +9,120 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="mouseCursor"></div>
     <canvas id="canvas1"></canvas>
     <div class="container">
-            <nav class="nav navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="mailto:nivedinp@gmail.com"><img class="contactMe" src="images/Chat_Blue.png" alt="">Contact ME</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class=" fas fa-bars barico fa-2x"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav  ml-auto mr-auto navIcons">
+        <nav class="nav navbar navbar-expand-lg ">
+            <div class="dropdown">
+                <a class="navbar-brand dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><img class="contactMe" src="images/Chat_Blue.png"
+                        alt="">Contact ME</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.instagram.com/nivedin"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a class="dropdown-item" href="https://in.linkedin.com/in/nivedin-p-suryan-561357188"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a class="dropdown-item" href="https://github.com/nivedin"><i class="fab fa-github fa-2x"></i></a>
+                    <a class="dropdown-item" href="mailto:nivedinp@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class=" fas fa-bars barico fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav  ml-auto mr-auto navIcons">
                     <a class="nav-item nav-link active" href="#aboutMe">About Me</a>
                     <a class="nav-item nav-link" href="#portfolio">Porfolio</a>
-                  </div>
                 </div>
-              </nav>
-            <div class="myname">
-                <div class="row">
-                    <div class="col-12 col-sm-6">
-                <h1>NIVEDIN.</h1>
             </div>
+        </nav>
+        <div class="myname">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h1>NIVEDIN.</h1>
+                </div>
             </div>
-            </div>
-           <div class="type">
-            <p><span class="nonType">I'am a</span> <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+        <div class="type">
+            <p><span class="nonType">I'am a</span> <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+            </p>
         </div>
         <div class="aboutMe" id="aboutMe">
-            <h1 >About-Me</h1><span class="underline">&nbsp;</span>
+            <h1>About-Me</h1><span class="underline">&nbsp;</span>
             <div class="row">
-            <div class="col-12 col-sm-6">
-            <div class="content row">
-                <div class="col col-sm">
-                <img src="images/prof3.jpeg" alt="">
-            </div>
-                <div class="col col-sm">
-            <p>Hey my name is Nivedin.</p>
-        </div> 
-            </div>
-            </div>
-            <div class="col-sm-6 skills">
-               <li><h4>HTML</h4><span class="bar"><span class="sk1"></span></span></li>
-               <li><h4>CSS</h4><span class="bar"><span class="sk2"></span></span></li>
-               <li><h4>Jquery</h4><span class="bar"><span class="sk3"></span></span></li>
-               <li><h4>React</h4><span class="bar"><span class="sk4"></span></span></li>
-               <li><h4>Node.js</h4><span class="bar"><span class="sk5"></span></span></li>
-               <li><h4>SASS</h4><span class="bar"><span class="sk6"></span></span></li>
-               <li><h4>Bootstrap</h4><span class="bar"><span class="sk7"></span></span></li>
-            </div>
+                <div class="col-12 col-sm-6">
+                    <div class="content row">
+                        <div class="col col-sm">
+                            <img src="images/prof3.jpeg" alt="">
+                        </div>
+                        <div class="col col-sm">
+                            <p>hey name is <span class="abname">Nivedin.</span><br>I'm a freelance Web developer from India.<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 skills">
+                    <li>
+                        <h4>HTML</h4><span class="bar"><span class="sk1"></span></span>
+                    </li>
+                    <li>
+                        <h4>CSS</h4><span class="bar"><span class="sk2"></span></span>
+                    </li>
+                    <li>
+                        <h4>Jquery</h4><span class="bar"><span class="sk3"></span></span>
+                    </li>
+                    <li>
+                        <h4>React</h4><span class="bar"><span class="sk4"></span></span>
+                    </li>
+                    <li>
+                        <h4>Node.js</h4><span class="bar"><span class="sk5"></span></span>
+                    </li>
+                    <li>
+                        <h4>SASS</h4><span class="bar"><span class="sk6"></span></span>
+                    </li>
+                    <li>
+                        <h4>Bootstrap</h4><span class="bar"><span class="sk7"></span></span>
+                    </li>
+                </div>
             </div>
         </div>
         <div class="portfolio" id="portfolio">
             <h1>Portfolios</h1><span class="underline">&nbsp;</span>
             <div class="content">
-            <img src="images/portfol1.png" alt="portfolio1">
-            <img src="images/portfol2.png" alt="portfolio2">
-            <img src="images/portfol3.png" alt="portfolio3">    
+                <img src="images/portfol1.png" alt="portfolio1" data-toggle="modal" data-target="#exampleModalCenter">
+                <img src="images/potfolio7.png" alt="portfolio2">
+                <img src="images/portfol3.png" alt="portfolio3">
+                <img src="images/port8.png" alt="portfolio3">
+                <img src="images/port6-a.png" alt="portfolio3">
+                <img src="images/port7-a.png" alt="portfolio3"> 
+            <!-- /////////////////////////////////// -->
+            
+
+            <!-- ////////////////////////////////// -->
+                
+                
+            </div>
         </div>
-        </div>
-       
-         <!-- //////// -->
+        <footer class="footer">
+            <p>&COPY; Nivedin</p><br>
+            <h6><a href="">Instagram</a><a href="">Linkedin</a><a href="">Mail</a></h6>
+        </footer>
+        <!-- //////// -->
     </div>
     <!-- /////// -->
 
 
 
 
-    
-   
+
+
 
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
@@ -89,4 +131,5 @@
     <script src="typing.js"></script>
     <script src="cursor.js"></script>
 </body>
+
 </html>
