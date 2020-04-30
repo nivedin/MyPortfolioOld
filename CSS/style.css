@@ -364,9 +364,16 @@ body {
 .portfolio img {
     padding: 10px;
     margin-left: 40px;
-    /* height: 200px;
-    width: 320px; */
+    height: 200px;
+    width: 320px; 
 }
+.portfolio img:hover{
+    opacity: 0.7;
+}
+/* /////////////////////////////// */
+
+
+/* ////////////////////////////// */
 @media screen and (max-width:1024px) {
     .myname h1 {
         font-size: 6rem;
@@ -397,6 +404,10 @@ body {
 
     .type p {
         font-size: 2rem;
+    }
+    .portfolio img {
+        width: 430px;
+        height: 250px;
     }
    
 }
